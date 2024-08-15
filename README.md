@@ -1,2 +1,2 @@
 # codealpha_tasks
-Includes tasks assign by codealpha for frontend development internship
+Includes codealpha frontend development tasks.
