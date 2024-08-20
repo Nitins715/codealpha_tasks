@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+/* Header */
+
+.main{
+    background-image: url("assets/images/bg.jpg");
+    height: 650px;
+    background-position: center center;
+    background-size: max(1200px,100vw);
+    background-repeat: no-repeat;
+    position: relative;
+}
+.main .nav{
+    max-width: 80vw;
+    margin: auto;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px 15px 30px;
+}
+.main .box{
+    height: 650px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    top: 0px;
+}
+.main img{
+    color: red;
+    position: relative;
+    width: 150px;
+    z-index: 10;
+} 
+.main select{
+    font-weight: 700;
+    padding: 6px 18px 6px 18px;
+    margin: 0px 20px 0px 20px;
+    position: relative;
+    border-radius: 5px;
+    z-index: 10;
+    background-color: rgba(23,23,23,0.7);
+}
+#btn1{
+    background-color: red;
+    font-weight: 400;
+    padding: 6px 18px;
+    border: 1px solid red;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    z-index: 10;
+}
+
+.separation{
+    height: 7px;
+    width: 100vw;
+    background-color: rgb(44, 44, 44);
+    z-index: 10;
+    position: relative;
+}
+
+.box{
+    height: calc(100%-100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    position: relative;
+}
+.box> :nth-child(1){
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+}
+.box> :nth-child(2){
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+.box> :nth-child(3){
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+.box .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.box input{
+    background-color: rgba(23,23,23,0.7);
+    padding: 15px 45px 15px 45px;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 1px solid rgba(243, 243, 243,0.5);
+    z-index: 10;
+
+}
+#btn2{
+    font-size: 20px;
+    font-weight: 400;
+    background-color: red;
+    padding: 15px 45px 15px 45px;
+    border-radius: 5px;
+    border-color: red;
+    z-index: 10;
+}
+
+/* Main */
+
+.first{
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+}
+.firstleft>div:nth-child(1){
+    font-size: 45px;
+    font-weight: bolder;
+}
+.firstleft>div:nth-child(2){
+    font-size: 25px;
+}
+.first .sec1img{
+    position: relative;
+    width: 450px;
+}
+.first .sec1img img{
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+.first .sec1img video{
+    position: absolute;
+    top: 88px;
+    right:-25px;
+    width: 400px;
+}
+
+.second .sec2img img{
+    position: relative;
+    height: 400px
+}
+
+.secondright>div:nth-child(1){
+    font-size: 45px;
+    font-weight: bolder;
+}
+.secondright>div:nth-child(2){
+    font-size: 25px;
+}
+
+.third .sec1img video{
+    top: 25px;
+    right: 0px;
+    width: 340px;
+}
+
+/* Footer */
+
+footer{
+    background-color: black;
+    width: 100vw;
+}
+.footer1{
+    height: 874px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.questionheading{
+    font-size: 45px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.questions{
+    height: 14vh;
+    width: 75vw;
+    font-size: 24px;
+    text-align: start;   
+    border:2px solid rgb(57, 57, 57);
+    transition: all 1s ease-out;
+    background-color: #2d2d2d;
+    padding: 24px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+.questions:hover{
+    background-color: #414141;
+    color: white;
+}
+
+.foot1end div{
+    width: 100%;
+    font-size: 20px;
+    margin: 50px 10px 30px 10px;
+}
+.foot1end .f1ee{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.foot1end input{
+    height: 50px;
+    width: 30vw;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    background-color: transparent;  
+    border-color: white;  
+    border-radius: 5px;
+}
+.foot1end button{
+    font-size: 20px;
+    font-weight: bolder;
+    height: 50px;
+    width: 20vw;
+    background-color: red;
+    border-color: red;
+    border-radius: 5px;
+}
+
+.footer2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.foot2start{
+    width: 60vw;
+    margin: auto;
+    padding:50px 0px 20px 50px;
+
+}
+.foot2{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+footer-item{
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+} 
+
+@media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+ 
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
